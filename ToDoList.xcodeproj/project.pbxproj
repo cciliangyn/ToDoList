@@ -14,6 +14,7 @@
 		70ABB30A2BF5F56300026CB1 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ABB3092BF5F56300026CB1 /* ToDoListTests.swift */; };
 		70ABB3142BF5F56300026CB1 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ABB3132BF5F56300026CB1 /* ToDoListUITests.swift */; };
 		70ABB3162BF5F56300026CB1 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ABB3152BF5F56300026CB1 /* ToDoListUITestsLaunchTests.swift */; };
+		70ABB3232BF5F77F00026CB1 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ABB3222BF5F77F00026CB1 /* NewToDoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		70ABB30F2BF5F56300026CB1 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ABB3132BF5F56300026CB1 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		70ABB3152BF5F56300026CB1 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70ABB3222BF5F77F00026CB1 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				70ABB2F82BF5F55D00026CB1 /* ToDoListApp.swift */,
 				70ABB2FA2BF5F55D00026CB1 /* ContentView.swift */,
+				70ABB3222BF5F77F00026CB1 /* NewToDoView.swift */,
 				70ABB2FC2BF5F56200026CB1 /* Assets.xcassets */,
 				70ABB2FE2BF5F56200026CB1 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70ABB3232BF5F77F00026CB1 /* NewToDoView.swift in Sources */,
 				70ABB2FB2BF5F55D00026CB1 /* ContentView.swift in Sources */,
 				70ABB2F92BF5F55D00026CB1 /* ToDoListApp.swift in Sources */,
 			);
