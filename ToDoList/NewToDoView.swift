@@ -51,7 +51,11 @@ struct NewToDoView: View {
         modelContext.insert(toDo)
     }
 }
-//
-//#Preview {
-//    NewToDoView()
-//}
+#Preview {
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: ToDoItem.self, configurations: config)
+
+    let toDo = ToDoItem(title: "Example ToDo", isImportant: false)
+    return NewToDoView(toDoItem: toDo, showNewTask: .constant(true))
+        .modelContainer(container)
+}

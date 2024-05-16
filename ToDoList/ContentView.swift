@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @State private var showNewTask = false
     @Query var toDos: [ToDoItem]
+    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         VStack {
@@ -39,10 +40,17 @@ struct ContentView: View {
                             Text(toDoItem.title)
                         }
                     }
+                    .onDelete(perform: deleteToDo)
             }
         }
         if showNewTask {
             NewToDoView(toDoItem: ToDoItem(title: "", isImportant: false), showNewTask: $showNewTask)
+        }
+    }
+    func deleteToDo(at offsets: IndexSet) {
+        for offset in offsets {
+            let toDoItem = toDos[offset]
+            modelContext.delete(toDoItem)
         }
     }
 }
